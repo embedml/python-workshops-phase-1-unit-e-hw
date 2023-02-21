@@ -91,5 +91,8 @@ def test_buy_items():
     l = buy_items(dict_1, dict_2)
     assert l == [list(dict_1.keys())[1]], f"Your list had {l}, which is incorrect"
     l = buy_items(dict_1, dict_3)
-    assert l == [list(dict_1.keys())[4], list(dict_1.keys())[2]], f"Your list had {l}, which is incorrect"
+    l.sort() # Need to sort with multiple elements so they line up correctly
+    answer_2 = [list(dict_1.keys())[4], list(dict_1.keys())[2]] # Create answer
+    answer_2.sort()
+    assert l == answer_2, f"Your list had {l}, which is incorrect"
     

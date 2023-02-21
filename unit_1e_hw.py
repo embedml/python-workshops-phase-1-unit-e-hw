@@ -154,5 +154,7 @@ At the end return the list 'goods_to_buy`, which should be in the order of `shop
 Hint: Use the previous function to reduce the number of lines of code you need. 
 Hint Hint: You can create more functions to make this easier to read/understand
 '''
+
 ##################################
+
 
